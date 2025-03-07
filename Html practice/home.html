@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Bazar Tech</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Navbar Styling */
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #222; /* Dark navbar */
+            padding: 10px 20px;
+        }
+
+        .logo {
+            height: 50px; /* Adjust size as needed */
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="home.html">
+            <img src="photos/logo.png" alt="Byte Bazar Tech Logo" class="logo">
+        </a>
+        <ul>
+            <li><a href="#featured-products">Products</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            
+
+        </ul>
+    </nav>
+
+    <h2>Our Products</h2>
+<div class="product-container">
+    <div class="product-box">
+        <a href="keyboard.html">
+            <img src="photos/test.png" alt="Mechanical Keyboard">
+        </a>
+        <p>Mechanical Keyboard</p>
+    </div>
+    <div class="product-box">
+        <a href="mouse.html">
+            <img src="photos/test2.png" alt="Gaming Mouse">
+        </a>
+        <p>Gaming Mouse</p>
+    </div>
+    <div class="product-box">
+        <a href="headset.html">
+            <img src="photos/headphone.png" alt="Wireless Headset">
+        </a>
+        <p>Wireless Headset</p>
+    </div>
+    <div class="product-box">
+        <a href="mousepad.html">
+            <img src="mousepad.jpg" alt="Mousepad">
+        </a>
+        <p>Mousepad</p>
+    </div>
+    <div class="product-box">
+        <a href="monitor.html">
+            <img src="photos/test 3.png" alt="Monitor">
+        </a>
+        <p>Monitor</p>
+    </div>
+</div>
+
+
+    <h2 id="featured-products">Featured Products</h2>
+    <div class="featured-container">
+        <div class="product-box">
+            <img src="photos/keyboard 1.png" alt="RGB Keyboard">
+            <p>RGB Mechanical Keyboard</p>
+        </div>
+        <div class="product-box">
+            <img src="photos/keyboard 2.png" alt="Compact Keyboard">
+            <p>Compact Mechanical Keyboard</p>
+        </div>
+        <div class="product-box">
+            <img src="photos/keyboard 3.png" alt="Wireless Keyboard">
+            <p>Wireless Mechanical Keyboard</p>
+        </div>
+    </div>
+
+    <h2 id="about">About Us</h2>
+    <div class="about-container">
+        <p>
+            Welcome to <strong>Byte Bazar Tech</strong>! We are dedicated to providing top-quality gaming peripherals 
+            that enhance your experience. From mechanical keyboards to high-performance gaming mice, we ensure 
+            the best quality and innovation. Our passion for technology drives us to deliver the ultimate gear for 
+            gamers and professionals alike.
+        </p>
+    </div>
+
+    <h2 id="contact">Contact Us</h2>
+    <div class="contact-container">
+        <p>Email: support@bytebazar.com</p>
+        <p>Phone: +123 456 7890</p>
+    </div>
+
+</body>
+</html>

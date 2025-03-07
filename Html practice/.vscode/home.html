@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Byte Bazar Tech</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="nightmode.css">
+    <script defer src="script.js"></script>
+    <script defer src="nightmode.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .product-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            color: black;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            font-weight: bold;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .night-mode-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ByteBazar</div>
+        <div class="social-handles">
+            <a href="#">FB</a>
+            <a href="#">IG</a>
+            <a href="#">TW</a>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav id="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="products">
+        <h1>Our Products</h1>
+        <div class="product-list">
+            <div class="product">
+                <img src="keyboard.jpg" alt="Keyboard" onclick="redirectToProduct('keyboard')">
+                <p>Mechanical Keyboard</p>
+            </div>
+            <div class="product">
+                <img src="mouse.png" alt="Mouse" onclick="redirectToProduct('mouse')">
+                <p>Gaming Mouse</p>
+            </div>
+            <div class="product">
+                <img src="headphone.png" alt="Headset" onclick="redirectToProduct('headset')">
+                <p>Wireless Headset</p>
+            </div>
+            <div class="product">
+                <img src="mousepad.jpg" alt="mousepad" onclick="redirectToProduct('mousepad')">
+                <p>Mousepad</p>
+            </div>
+            <div class="product">
+                <img src="monitor.png" alt="monitor" onlcick="redirectToProduct('monitor')">
+                <p>Monitor</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="night-mode-toggle">
+        <label class="theme-switch">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="Featured Prodcuts"></div>
+    <div class="Trending"></div>
+    <script>
+        function redirectToProduct(product) {
+            window.location.href = `product-${product}.html`;
+        }
+    </script>
+</body>
+</html>

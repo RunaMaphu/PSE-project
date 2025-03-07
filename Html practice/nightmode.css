@@ -1,0 +1,66 @@
+input:checked + .slider {
+    background-color: #0fbcf9;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider:after {
+    content: "🌙";
+    position: absolute;
+    left: 4px;
+    top: 46%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+input:checked + .slider:after {
+    content: "☀️";
+    left: 31px;
+    top: 16px;
+    opacity: 1;
+}
+.night-mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s, color 0.4s;
+}
+
+.product {
+    background-color: white;
+    color: black; /* Ensure text remains visible */
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+[data-theme="dark"] .product {
+    background-color: white;
+    color: black; /* Adjust to ensure contrast */
+}

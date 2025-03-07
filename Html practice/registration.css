@@ -1,0 +1,131 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/* Wrapper (Container) */
+.wrapper {
+    width: 380px;
+    background: rgba(34, 34, 34, 0.95); 
+    text-align: center;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    position: relative;
+    margin: 0 auto; /* Ensure it's centered */
+}
+
+/* Title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* Input Fields */
+.input-box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Input field styling */
+.input-box input {
+    width: 100%;
+    height: 45px;
+    padding: 10px 15px 10px 50px; /* Increase left padding for better alignment */
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    font-size: 16px;
+    color: white;
+    outline: none;
+    backdrop-filter: blur(8px);
+}
+
+/* Fix for Icons */
+.input-box i {
+    position: absolute;
+    left: 15px; /* Align properly */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Placeholder Styling */
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+}
+
+/* Fix container */
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Ensure it doesn’t get too big */
+    margin: auto; /* Center it properly */
+}
+
+
+
+/* Terms & Conditions - Fixing Checkbox Alignment */
+/* Terms & Conditions - Properly Align Checkbox */
+.terms {
+    font-size: 14px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;  /* Keep checkbox and text aligned */
+    justify-content: center; /* Center within the wrapper */
+    gap: 8px; /* Space between checkbox and text */
+    text-align: left;
+}
+
+/* Ensure Checkbox is Properly Sized & Aligned */
+.terms input {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    accent-color: #ff5500; /* Makes checkbox color match theme */
+}
+
+/* Register Button */
+.button {
+    width: 100%;
+    height: 45px;
+    background: #ff5500;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: #ff7700;
+}
+
+/* Login Link */
+.login-link {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #ff5500;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}

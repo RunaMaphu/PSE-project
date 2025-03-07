@@ -1,14 +1,7 @@
-/* General Body Styling */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #111; /* Dark background to match website */
-    font-family: Arial, sans-serif;
-    color: white; /* White text for readability */
-}
 
+html {
+    scroll-behavior: smooth;
+}
 /* Wrapper (Container) */
 .wrapper {
     width: 400px;
@@ -20,20 +13,20 @@ body {
     position: relative;
 }
 
-/* Logo */
-/* Navigation Bar */
-/* Navigation Bar */
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #222; /* Dark background */
 }
 
 
 
-
+.logo {
+    height: 50px; /* Adjust size as needed */
+}
 
 /* Logo */
 .logo img {
@@ -44,20 +37,28 @@ nav {
 /* Navigation Menu */
 nav ul {
     list-style: none;
-    display: flex;
-    gap: 20px;  /* Adds spacing between items */
+    padding: 0;
+    margin: 0;
+    display: flex
+;
+    justify-content: flex-end;
+    background-color: #222;
+    padding: 15px;
 }
 
+/* nav ul li { */
+    /* display: inline;
+} */
+
+
 nav ul li {
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 16px;
-    padding: 10px;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -155,3 +156,4 @@ p a {
 p a:hover {
     text-decoration: underline;
 }
+

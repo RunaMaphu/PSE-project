@@ -1,9 +1,27 @@
 
 html {
     scroll-behavior: smooth;
+    
+ 
+}
+body{
+    margin: 0px;
+    padding: 0px ;
+ 
 }
 /* Wrapper (Container) */
 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #111; /* Dark background to match website */
+    font-family: Arial, sans-serif;
+    color: white; /* White text for readability */
+    
+}
+
+.form-w{
     width: 400px;
     background: #222; /* Dark gray box */
     text-align: center;
@@ -25,7 +43,9 @@ nav {
 
 
 .logo {
-    height: 50px; /* Adjust size as needed */
+  /* Adjust size as needed */
+  height: 50px;
+    margin-bottom: 5px;
 }
 
 /* Logo */
